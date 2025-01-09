@@ -12,8 +12,7 @@
     [ngClass]="{ 'text-red-500': characterIsFavorite(character), 'text-black': !characterIsFavorite(character) }"
   >
     <span
-      class="material-icons"
-      [ngClass]="{ 'outline-black text-white': characterIsFavorite(character), 'text-black': !characterIsFavorite(character) }"
+      [ngClass]="{ 'material-symbols-outlined text-black': characterIsFavorite(character), 'text-white material-icons': !characterIsFavorite(character) }"
       >favorite</span
     >
   </button>
